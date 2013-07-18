@@ -269,6 +269,7 @@ ifeq ($(dvm_arch),arm)
     LOCAL_WHOLE_STATIC_LIBRARIES += libqc-dalvik
     LOCAL_SHARED_LIBRARIES += libqc-opt
   endif
+  LOCAL_CFLAGS += -DHAVE_HALFWORD_ATOMIC_MEMMOVE
   endif
 endif
 
